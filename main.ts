@@ -1,6 +1,9 @@
 lcd.init_display(lcd.eDisplay.qwiic_16_2)
 loops.everyInterval(1000, function () {
     pins.rtc_read()
+    if (pins.keypadConnected()) {
+        lcd.write_text(1, 0, 5, lcd.lcd_text(pins.rtc_set_key(pins.keypad_read())))
+    }
     lcd.write_text(0, 3, 4, pins.rtc_get_string(pins.rtc_eFormat.ddd))
     lcd.write_text(0, 6, 15, pins.rtc_get_string(pins.rtc_eFormat.ddMM20yy))
     lcd.write_text(1, 6, 15, pins.rtc_get_string(pins.rtc_eFormat.hhmss))
