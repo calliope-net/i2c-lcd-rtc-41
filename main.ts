@@ -7,7 +7,7 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     }
 })
 function Projekt () {
-    pins.comment(pins.pins_text("https://github.com/calliope-net/i2c-lcd-rtc-41"))
+    pins.comment(pins.pins_text("calliope-net/i2c-lcd-rtc-41"))
     pins.comment(pins.pins_text("calliope-net/pins; calliope-net/lcd"))
 }
 let a = 0
