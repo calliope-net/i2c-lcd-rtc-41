@@ -6,8 +6,13 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
         basic.clearScreen()
     }
 })
+function Projekt () {
+    pins.comment(pins.pins_text("https://github.com/calliope-net/i2c-lcd-rtc-41"))
+    pins.comment(pins.pins_text("calliope-net/pins; calliope-net/lcd"))
+}
 let a = 0
 lcd.init_display(lcd.eDisplay.qwiic_16_2)
+a = 0
 loops.everyInterval(1000, function () {
     pins.rtc_read()
     if (pins.keypadConnected()) {
