@@ -1,5 +1,6 @@
 {
     "name": "i2c-lcd-rtc-41",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
