@@ -9,6 +9,8 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 function Projekt () {
     pins.comment(pins.pins_text("calliope-net/i2c-lcd-rtc-41"))
     pins.comment(pins.pins_text("calliope-net/pins; calliope-net/lcd"))
+    pins.comment(pins.pins_text("Uhr stellen am Keypad 5 Zeichen *rdd#"))
+    pins.comment(pins.pins_text("0 Sekunde 00-59; 1 Minute 00-59; 2 Stunde 00-23; 3 Tag 00-31; 4 Wochentag 00-06; 5 Monat 01-12; 6 Jahr 00-99"))
 }
 let a = 0
 lcd.init_display(lcd.eDisplay.qwiic_16_2)
